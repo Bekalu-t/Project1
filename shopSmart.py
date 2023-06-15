@@ -30,6 +30,11 @@ def shopSmart(orderList, fruitShops):
         fruitShops: List of FruitShops
     """
     "*** YOUR CODE HERE ***"
+    
+    for shop in fruitShops:
+        cost = shop.buyLotsOfFruit(orderList)
+        if cost is not None and cost < lowestCost:
+            lowestCost = cost
     return None
 
 
